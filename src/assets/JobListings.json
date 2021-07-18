@@ -1,0 +1,14 @@
+[
+    {
+        "title" : "Java Developer",
+        "companyName" : "Awakers and Co.",
+        "location" : "Chennai, Tirunelveli, Madurai",
+        "requiredExperience" :
+        {
+            "minimumYears" : 2,
+            "maximumYears" : 4
+        },
+        "postedBy" : "Fazil Ahamed K",
+        "postedOn" : "2021-07-18T14:14:14"
+    }
+]
