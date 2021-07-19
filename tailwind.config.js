@@ -8,12 +8,13 @@ module.exports =
     {
       backgroundColor :
       {
-        "awakersBlue-shade-30" : "#015A8A"
+        "awakersBlue-shade-30" : "#015A8A",
+        "awakersBlue-tint-80" : "#CCE6F3"
       },
       borderColor :
       {
         awakersBlue : "#0280C5",
-        "awakersBlue-tint-80" : "3CCE6F3"
+        "awakersBlue-tint-80" : "#CCE6F3"
       },
       spacing :
       {

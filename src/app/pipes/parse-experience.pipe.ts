@@ -6,27 +6,27 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ParseExperiencePipe implements PipeTransform
 {
-  transform(requiredExperience : {minimumYears : number, maximumYears : number}) : string
+  transform(experienceRequired : {minimumYears : number, maximumYears : number}) : string
   {
-    let requiredExperienceInWords : string = "";
+    let experienceRequiredInWords : string = "";
 
-    if (requiredExperience.minimumYears && requiredExperience.maximumYears)
+    if (experienceRequired.minimumYears && experienceRequired.maximumYears)
     {
-      requiredExperienceInWords = `${requiredExperience.minimumYears} - ${requiredExperience.maximumYears} years`;
+      experienceRequiredInWords = `${experienceRequired.minimumYears} - ${experienceRequired.maximumYears} years`;
     }
-    else if (!requiredExperience.minimumYears && requiredExperience.maximumYears)
+    else if (!experienceRequired.minimumYears && experienceRequired.maximumYears)
     {
-      requiredExperienceInWords = `Within ${requiredExperience.maximumYears} years`;
+      experienceRequiredInWords = `Within ${experienceRequired.maximumYears} years`;
     }
-    else if (requiredExperience.minimumYears && !requiredExperience.maximumYears)
+    else if (experienceRequired.minimumYears && !experienceRequired.maximumYears)
     {
-      requiredExperienceInWords = `${requiredExperience.minimumYears} years or more`;
+      experienceRequiredInWords = `${experienceRequired.minimumYears} years or more`;
     }
-    else if (!requiredExperience.minimumYears && !requiredExperience.maximumYears)
+    else if (!experienceRequired.minimumYears && !experienceRequired.maximumYears)
     {
-      requiredExperienceInWords = "Any number of years";
+      experienceRequiredInWords = "Any number of years";
     }
 
-    return requiredExperienceInWords;
+    return experienceRequiredInWords;
   }
 }

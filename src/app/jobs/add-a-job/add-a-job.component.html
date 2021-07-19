@@ -1,1 +1,58 @@
-<p>add-ajob works!</p>
+<div class="flex flex-col justify-center items-center">
+    <div class="mt-2 font-semibold text-lg tracking-wider">Add A Job</div>
+
+    <form [formGroup]="addAJobForm" class="mt-2 p-2 flex flex-col w-11/12 border-2 border-awakersBlue-tint-80 rounded-md">
+        <div class="flex divide-x-2 divide-gray-200">
+            <div class="flex-auto px-2">
+                <div class="flex flex-col">
+                    <div class="flex">
+                        <label for="title">Job Title</label>
+                        <span class="ml-1 text-awakersRed">*</span>
+                    </div>
+                    <input formControlName="title" type="text" id="title" class="h-8 w-full border rounded-md mt-1 px-2" placeholder="Java Developer">
+                </div>
+        
+                <div class="flex flex-col mt-4">
+                    <div class="flex">
+                        <label for="title">Company Name</label>
+                        <span class="ml-1 text-awakersRed">*</span>
+                    </div>
+                    <input formControlName="companyName" type="text" id="companyName" class="h-8 w-full border rounded-md mt-1 px-2" placeholder="Tech Mahindra">
+                </div>
+                
+                <div class="flex flex-col mt-4">
+                    <div class="flex">
+                        <label for="title">Location(s)</label>
+                        <span class="ml-1 text-awakersRed">*</span>
+                    </div>
+                    <input formControlName="locations" type="text" id="locations" class="h-8 w-full border rounded-md mt-1 px-2" placeholder="Chennai, Bangalore, Assam">
+                </div>
+                
+                <div class="flex flex-col mt-4">
+                    <label for="description">Job Description</label>
+                    <textarea formControlName="description" id="description" rows="4" class="w-full border rounded-md mt-1 px-2"></textarea>
+                </div>
+        
+                <div formGroupName="experienceRequired" class="flex flex-col mt-4">
+                    <label>Experience Required</label>
+                    <div class="flex items-center">
+                        <input formControlName="minimumYears" type="number" id="minimumYears" class="h-8 w-16 border rounded-md mt-1 px-2" placeholder="0">
+                        <span class="mx-2 text-gray-600">to</span>
+                        <input formControlName="maximumYears" type="number" id="maximumYears" class="h-8 w-16 border rounded-md mt-1 px-2" placeholder="3.5">
+                        <span class="ml-2 text-gray-600">years</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-auto px-2">
+                <div class="flex flex-col mt-4">
+                    <label for="additionalRequirment">Additional Requirements</label>
+                    <textarea formControlName="additionalRequirment" id="additionalRequirment" rows="2" class="w-full border rounded-md mt-1 px-2"></textarea>
+                    <div class="flex justify-end items-center mt-4 cursor-pointer">
+                        <div class="flex justify-center items-center w-6 h-6 text-awakersBlue-shade-30 font-semibold text-lg pb-0.5 bg-awakersBlue-tint-80 rounded-full">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

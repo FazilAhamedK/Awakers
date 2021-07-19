@@ -2,7 +2,7 @@
     {
         "title" : "Java Developer",
         "companyName" : "Awakers and Co.",
-        "location" : "Chennai, Tirunelveli, Madurai",
+        "locations" : "Chennai, Tirunelveli, Madurai",
         "requiredExperience" :
         {
             "minimumYears" : 2,

@@ -11,6 +11,7 @@ import { AddAJobComponent } from './jobs/add-a-job/add-a-job.component';
 import { ParseExperiencePipe } from './pipes/parse-experience.pipe';
 import { LoginGuard } from './guards/login.guard';
 import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule
 ({
@@ -27,7 +28,8 @@ import { LoginComponent } from './login/login.component';
   [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers:
   [
