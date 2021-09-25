@@ -4,25 +4,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ViewJobsComponent } from './jobs/view-jobs/view-jobs.component';
-import { JobService } from './jobs/view-jobs/view-jobs.service';
-import { AddAJobComponent } from './jobs/add-a-job/add-a-job.component';
-import { ParseExperiencePipe } from './pipes/parse-experience.pipe';
-import { LoginGuard } from './guards/login.guard';
-import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule
 ({
   declarations:
   [
     AppComponent,
-    HomeComponent,
-    ViewJobsComponent,
-    AddAJobComponent,
-    ParseExperiencePipe,
-    LoginComponent
+    AboutUsComponent
   ],
   imports:
   [
@@ -31,11 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers:
-  [
-    JobService,
-    LoginGuard
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule

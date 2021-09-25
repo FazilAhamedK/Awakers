@@ -1,19 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginGuard } from './guards/login.guard';
-import { HomeComponent } from './home/home.component';
-import { AddAJobComponent } from './jobs/add-a-job/add-a-job.component';
-import { ViewJobsComponent } from './jobs/view-jobs/view-jobs.component';
-import { LoginComponent } from './login/login.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes : Routes =
 [
-  {path : "", redirectTo : "home", pathMatch : "full"},
-  {path : "login/:redirectTo", component : LoginComponent},
-  {path : "home", component : HomeComponent},
-  {path : "jobs", component : ViewJobsComponent},
-  {path : "jobs/add", component : AddAJobComponent, canActivate : [LoginGuard]},
-  {path : "**", redirectTo : "home", pathMatch : "full"}
+  {path : "", redirectTo : "aboutUs", pathMatch : "full"},
+  {path : "aboutUs", component : AboutUsComponent},
+  {path : "**", redirectTo : "aboutUs", pathMatch : "full"}
 ];
 
 @NgModule

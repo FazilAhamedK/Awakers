@@ -1,0 +1,9 @@
+.navBarItems
+{
+    @apply cursor-pointer;
+
+    div:not(:first-child)
+    {
+        @apply ml-4;
+    }
+}

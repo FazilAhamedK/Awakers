@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body
+{
+    @apply text-bahamaBlue;
+}
+
+h1
+{
+    @apply font-bold text-3xl tracking-wide text-raspberryRomantic;
+}
+
+h2
+{
+    @apply font-semibold text-xl text-raspberryRomantic;
+}

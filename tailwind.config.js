@@ -4,31 +4,27 @@ module.exports =
   darkMode: false,
   theme:
   {
-    extend:
+    backgroundColor:
     {
-      backgroundColor :
-      {
-        "awakersBlue-shade-30" : "#015A8A",
-        "awakersBlue-tint-80" : "#CCE6F3",
-        "awakersRed-tint-80" : "#F8D0D1"
-      },
-      borderColor :
-      {
-        awakersBlue : "#0280C5",
-        "awakersBlue-tint-80" : "#CCE6F3"
-      },
-      spacing :
-      {
-        "1.6" : "0.4rem",
-        104 : "26rem",
-        112 : "28rem"
-      },
-      textColor :
-      {
-        "awakersBlue-shade-30" : "#015A8A",
-        awakersRed : "#DD1518"
-      }
+      raspberryRomantic : "#9B274F",
+      lynxWhite : "#F7F7F7",
+      mysticLight : "#DEE6ED",
+      bahamaBlue : "#24597D"
     },
+    borderColor:
+    {
+      raspberryRomantic : "#9B274F",
+      lynxWhite : "#F7F7F7",
+      mysticLight : "#DEE6ED",
+      bahamaBlue : "#24597D"
+    },
+    textColor:
+    {
+      raspberryRomantic : "#9B274F",
+      lynxWhite : "#F7F7F7",
+      mysticLight : "#DEE6ED",
+      bahamaBlue : "#24597D"
+    }
   },
   variants:
   {
