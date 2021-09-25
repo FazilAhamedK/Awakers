@@ -1,7 +1,27 @@
 <div class="flex flex-col justify-center items-center">
-    <div class="mt-2 font-semibold text-lg tracking-wider">Add A Job</div>
+    <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" height="24px" width="24px" class="flex items-center fill-current text-awakersBlue-shade-30">
+            <g>
+                <rect fill="none" height="24" width="24" y="0"/>
+            </g>
+            
+            <g>
+                <g>
+                    <rect height="1.5" width="4" x="14" y="12"/>
+                    <rect height="1.5" width="4" x="14" y="15"/>
+                    
+                    <path d="M20,7h-5V4c0-1.1-0.9-2-2-2h-2C9.9,2,9,2.9,9,4v3H4C2.9,7,2,7.9,2,9v11c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V9 C22,7.9,21.1,7,20,7z M11,7V4h2v3v2h-2V7z M20,20H4V9h5c0,1.1,0.9,2,2,2h2c1.1,0,2-0.9,2-2h5V20z"/>
+                    
+                    <circle cx="9" cy="13.5" r="1.5"/>
+                    <path d="M11.08,16.18C10.44,15.9,9.74,15.75,9,15.75s-1.44,0.15-2.08,0.43C6.36,16.42,6,16.96,6,17.57V18h6v-0.43 C12,16.96,11.64,16.42,11.08,16.18z"/>
+                </g>
+            </g>
+        </svg>
 
-    <form [formGroup]="addAJobForm" class="mt-2 p-2 flex flex-col w-11/12 border-2 border-awakersBlue-tint-80 rounded-md">
+        <div class="mt-2 font-semibold text-lg tracking-wider">Add A Job</div>
+    </div>
+
+    <form [formGroup]="addAJobForm" class="my-2 p-2 flex flex-col w-11/12 max-h-112 border-2 border-awakersBlue-tint-80 rounded-md">
         <div class="flex divide-x-2 divide-gray-200">
             <div class="flex-auto px-2">
                 <div class="flex flex-col">
@@ -22,7 +42,7 @@
                 
                 <div class="flex flex-col mt-4">
                     <div class="flex">
-                        <label for="title">Location(s)</label>
+                        <label for="title">Locations</label>
                         <span class="ml-1 text-awakersRed">*</span>
                     </div>
                     <input formControlName="locations" type="text" id="locations" class="h-8 w-full border rounded-md mt-1 px-2" placeholder="Chennai, Bangalore, Assam">
@@ -44,11 +64,16 @@
                 </div>
             </div>
 
-            <div class="flex-auto px-2">
+            <div class="flex-auto px-2 max-h-104 overflow-y-scroll">
                 <div class="flex flex-col mt-4">
                     <label for="additionalRequirment">Additional Requirements</label>
-                    <textarea formControlName="additionalRequirment" id="additionalRequirment" rows="2" class="w-full border rounded-md mt-1 px-2"></textarea>
-                    <div class="flex justify-end items-center mt-4 cursor-pointer">
+                    
+                    <div *ngFor="let additionalRequirement of getAdditionalRequirements(); let index = index"  class="relative flex mt-1">
+                        <textarea [formControl]="getAdditionalRequirements()[index]" id="additionalRequirment" rows="2" class="w-full border rounded-md px-2"></textarea>
+                        <div *ngIf="index != 0" (click)="removeAdditionalRequirement(index)" class="absolute right-0 cursor-pointer flex justify-center items-center w-6 h-6 text-awakersRed font-semibold pb-1 bg-awakersRed-tint-80 rounded-md">x</div>
+                    </div>
+
+                    <div (click)="addAdditionalRequirement()" class="flex justify-end items-center mt-4 cursor-pointer">
                         <div class="flex justify-center items-center w-6 h-6 text-awakersBlue-shade-30 font-semibold text-lg pb-0.5 bg-awakersBlue-tint-80 rounded-full">+</div>
                     </div>
                 </div>

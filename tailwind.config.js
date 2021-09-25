@@ -9,7 +9,8 @@ module.exports =
       backgroundColor :
       {
         "awakersBlue-shade-30" : "#015A8A",
-        "awakersBlue-tint-80" : "#CCE6F3"
+        "awakersBlue-tint-80" : "#CCE6F3",
+        "awakersRed-tint-80" : "#F8D0D1"
       },
       borderColor :
       {
@@ -18,7 +19,9 @@ module.exports =
       },
       spacing :
       {
-        "1.6" : "0.4rem"
+        "1.6" : "0.4rem",
+        104 : "26rem",
+        112 : "28rem"
       },
       textColor :
       {

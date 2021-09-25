@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, Form, FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component
 ({
@@ -27,7 +27,22 @@ export class AddAJobComponent implements OnInit
         minimumYears : [""],
         maximumYears : [""]
       }),
-      additionalRequirements : [""]
+      additionalRequirements : this.formBuilder.array([new FormControl("")])
     });
+  }
+
+  getAdditionalRequirements() : FormControl[]
+  {
+    return (this.addAJobForm.controls.additionalRequirements as FormArray).controls as FormControl[];
+  }
+
+  addAdditionalRequirement() : void
+  {
+    (this.addAJobForm.controls.additionalRequirements as FormArray).push(new FormControl(""));
+  }
+
+  removeAdditionalRequirement(index : number) : void
+  {
+    (this.addAJobForm.controls.additionalRequirements as FormArray).removeAt(index);
   }
 }
