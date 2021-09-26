@@ -9,4 +9,13 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent
-{ }
+{
+  constructor(private router : Router)
+  { }
+
+  isActiveNavLink(navItem : string) : boolean
+  {
+    console.log(this.router.url)
+    return this.router.url === "/" + navItem;
+  }
+}

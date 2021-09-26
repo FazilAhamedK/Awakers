@@ -1,9 +1,14 @@
-.navBarItems
+.navLinks
 {
     @apply cursor-pointer;
 
+    div:first-child
+    {
+        @apply pr-2;
+    }
+
     div:not(:first-child)
     {
-        @apply ml-4;
+        @apply px-2;
     }
 }

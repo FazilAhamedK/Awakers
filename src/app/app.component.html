@@ -1,8 +1,9 @@
 <nav class="flex justify-between items-center bg-bahamaBlue text-lynxWhite px-3 py-2 shadow-lg">
   <div routerLink="" class="text-xl tracking-wider font-semibold ml-2 cursor-pointer">Awakers</div>
 
-  <div class="flex items-center navBarItems">
-    <div routerLink="aboutUs">About Us</div>
+  <div class="flex items-center navLinks divide-x divide-mysticLight">
+    <div routerLink="aboutUs" [ngClass]="{'font-bold' : isActiveNavLink('aboutUs')}">About Us</div>
+    <div routerLink="activities" [ngClass]="{'font-bold' : isActiveNavLink('activities')}">Activities</div>
   </div>
 </nav>
 
