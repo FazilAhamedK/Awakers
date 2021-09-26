@@ -15,7 +15,6 @@ export class AppComponent
 
   isActiveNavLink(navItem : string) : boolean
   {
-    console.log(this.router.url)
     return this.router.url === "/" + navItem;
   }
 }

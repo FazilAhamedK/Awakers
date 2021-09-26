@@ -16,3 +16,23 @@ h2
 {
     @apply font-semibold text-xl text-raspberryRomantic;
 }
+
+::-webkit-scrollbar
+{
+    @apply w-2;
+
+    &-track
+    {
+        @apply bg-mysticLight;
+    }
+
+    &-thumb
+    {
+        @apply bg-raspberryRomantic bg-opacity-50;
+
+        &:hover
+        {
+            @apply bg-opacity-100;
+        }
+    }
+}
