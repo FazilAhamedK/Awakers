@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Team Elixir",
+        "description": "Verify and support for the blood needs and supporting the hospitals with blood camps and providing seminar on the importance of blood donation and need for the blood"
+    },
+    {
+        "name": "Hair Donation",
+        "description": "Arranging camps for the hair donation with best hair stylist and providing the donated hair to the cancer patients"
+    },
+    {
+        "name": "CSA Awareness",
+        "description" : "Conducting session based on the good touch and bad touch for both parents and children to avoid Child Sexual Abuse"
+    },
+    {
+        "name": "Cancer Awareness",
+        "description": "Conducting events for the awareness about cancer along with blood donation and hair donation for the cancer affected people"
+    },
+    {
+        "name": "Career Guidance",
+        "description": "Providing Career support to all the job less people along with sessions to boost their knowledge to attend the interview and references to get the interview for the jobs in their field"
+    },
+    {
+        "name": "Medical Support",
+        "description": "Organized many fundraisers event for the benefit of the COVID affected people and the betterment of their life due to this pandemic situation"
+    },
+    {
+        "name": "Educational Support",
+        "description": "Providing sessions about important of education for the lower cast and tribal peoples and also providing support for their Education for their better life in future"
+    },
+    {
+        "name": "Relief and Rescue",
+        "description": "Supporting in means of everything in terms of any unexpected event happens like flood, cyclone and other natural calamities"
+    },
+    {
+        "name": "Project Annam",
+        "description": "Supporting with foods for the old age home and also the roadside people along with some clothes and other materials on some special occasions. And also providing the necessary requirements for the old age home"
+    },
+    {
+        "name": "Women and Proud",
+        "description": "Arranging sessions for the empowerment of the women and helping out with their family to get better with this empowerment"
+    },
+    {
+        "name": "Beach Cleaning and Tree Plantation",
+        "description": "For the support of the environment with support of other NGO’s and municipalities we do clean up the beach and also plant the tree saplings and watering them"
+    }
+]

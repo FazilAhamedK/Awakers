@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { ActivityService } from './services/activity.service';
 
 @NgModule
 ({
@@ -23,7 +24,10 @@ import { ActivitiesComponent } from './activities/activities.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers:
+  [
+    ActivityService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule
