@@ -2,6 +2,8 @@
 
 <div class="flex flex-wrap justify-around mt-4">
     <div *ngFor="let activity of activities" class="flex flex-col border border-bahamaBlue shadow-lg rounded-md max-w-xs my-4">
+        <img src="assets/{{activity.imageURL}}" class="rounded-t-md" alt="A stock image relevant to {{activity.name}}">
+        
         <div class="p-2 uppercase tracking-wider text-lg text-raspberryRomantic font-bold">
             {{activity.name}}
         </div>
