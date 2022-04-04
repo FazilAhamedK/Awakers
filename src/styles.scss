@@ -4,17 +4,17 @@
 
 body
 {
-    @apply text-bahamaBlue;
+    @apply text-primary;
 }
 
 h1
 {
-    @apply font-bold text-3xl tracking-wide text-raspberryRomantic;
+    @apply font-bold text-3xl tracking-wide text-secondary;
 }
 
 h2
 {
-    @apply font-semibold text-xl text-raspberryRomantic;
+    @apply font-semibold text-xl text-secondary;
 }
 
 ::-webkit-scrollbar
@@ -23,12 +23,12 @@ h2
 
     &-track
     {
-        @apply bg-mysticLight;
+        @apply bg-tertiary;
     }
 
     &-thumb
     {
-        @apply bg-raspberryRomantic bg-opacity-50;
+        @apply bg-secondary bg-opacity-50;
 
         &:hover
         {

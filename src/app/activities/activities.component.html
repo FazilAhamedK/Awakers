@@ -1,14 +1,14 @@
 <h1 class="text-center">What do we do?</h1>
 
 <div class="flex flex-wrap justify-around mt-4">
-    <div *ngFor="let activity of activities" class="flex flex-col border border-bahamaBlue shadow-lg rounded-md max-w-xs my-4">
+    <div *ngFor="let activity of activities" class="flex flex-col border border-primary shadow-lg rounded-md max-w-xs my-4">
         <img src="assets/{{activity.imageURL}}" class="rounded-t-md" alt="A stock image relevant to {{activity.name}}">
         
-        <div class="p-2 uppercase tracking-wider text-lg text-raspberryRomantic font-bold">
+        <div class="p-2 uppercase tracking-wider text-lg text-secondary font-bold">
             {{activity.name}}
         </div>
         
-        <div class="p-2 border-t border-mysticLight flex-auto text-justify">
+        <div class="p-2 border-t border-tertiary flex-auto text-justify">
             {{activity.description}}
         </div>
     </div>

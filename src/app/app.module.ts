@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ActivityService } from './services/activity.service';
+import { EventsComponent } from './events/events.component';
 
 @NgModule
 ({
@@ -15,7 +16,8 @@ import { ActivityService } from './services/activity.service';
   [
     AppComponent,
     AboutUsComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    EventsComponent
   ],
   imports:
   [

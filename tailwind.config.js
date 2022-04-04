@@ -10,29 +10,33 @@ module.exports =
   {
     backgroundColor:
     {
-      raspberryRomantic : "#9B274F",
-      lynxWhite : "#F7F7F7",
-      mysticLight : "#DEE6ED",
-      bahamaBlue : "#24597D"
+      primary : "#49143F",
+      secondary : "#AD3465",
+      tertiary : "#D38C39",
+      neutral : "#F7F7F7"
     },
     borderColor:
     {
-      raspberryRomantic : "#9B274F",
-      lynxWhite : "#F7F7F7",
-      mysticLight : "#DEE6ED",
-      bahamaBlue : "#24597D"
+      primary : "#49143F",
+      secondary : "#AD3465",
+      tertiary : "#D38C39",
+      neutral : "#F7F7F7"
     },
     textColor:
     {
-      raspberryRomantic : "#9B274F",
-      lynxWhite : "#F7F7F7",
-      mysticLight : "#DEE6ED",
-      bahamaBlue : "#24597D"
+      primary : "#49143F",
+      secondary : "#AD3465",
+      tertiary : "#D38C39",
+      neutral : "#F7F7F7"
     }
   },
   variants:
   {
-    extend: {},
+    extend:
+    {
+      fontWeight: ["hover"],
+      letterSpacing: ["hover"]
+    },
   },
   plugins: [],
 }
